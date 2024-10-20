@@ -2,6 +2,7 @@ body {
     font-family: 'Quicksand', Arial, sans-serif;
     line-height: 1.6;
 }
+
 .navbar-brand {
     font-weight: bold;
 }
@@ -11,7 +12,22 @@ body {
 .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:contain;
+    object-position: top;
+}
+.custom-carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 5%;
+    opacity: 0.8;
+}
+.custom-carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
 }
 .breadcrumb-item a {
     color: inherit;
@@ -36,7 +52,8 @@ body {
 }
 
 .contact-container
-{   background:#f0f0f3;
+{   
+    /* background:#f0f0f3; */
     outline:none;
     border:none;
     border-radius: 30px;
@@ -183,4 +200,65 @@ tr td{
     font-size:14px;
 }
 
+}
+
+
+.contact-container {
+    padding: 50px 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.btn-outline-primary {
+    transition: 0.3s;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.contact-container {
+    padding: 50px 0;
+}
+
+.contact-card {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+h1, h3, h5 {
+    color: #333;
+}
+
+p {
+    color: #666;
 }
